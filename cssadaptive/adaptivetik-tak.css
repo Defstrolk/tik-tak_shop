@@ -1,0 +1,153 @@
+@media (max-width: 1280px) {
+  .product-details{
+    font-size: clamp(1rem, 1.455vw + 0.673rem, 1.25rem);
+  }
+
+  .slider-wrapper{
+    grid-template-columns: 19% 21% 44% 16%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .moto1{
+    font-size: clamp(20px, 3.5vw, 60px);
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  .bannervintage{
+    width: 140px;
+  }
+  .bannermodern{
+    width: 140px;
+  }
+
+  .product-details{
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .watch{
+    width: 18vw;
+  }
+
+  .slider-message{
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+  .product-details{
+    font-size: 15px;
+    line-height: 12px;
+  }
+
+  .bannervintage{
+    width: 160px;
+  }
+  .bannermodern{
+    width: 160px;
+  }
+
+  .product-details{
+    height: 18vh;
+  }
+
+  .slider-name{
+    height: 18vh;
+  }
+
+  .slider-message{
+    height: 18vh;
+  }
+
+  .watch{
+    height: 18vh;
+    aspect-ratio: 1.5;
+  }
+
+  .slider-wrapper{
+    height: 18vh;
+  }
+
+  .content{
+    height: 72vh;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .bannervintage{
+    width: 200px;
+  }
+  .bannermodern{
+    width: 200px;
+  }
+
+  .watch{
+    height: 18vh;
+    width: 32vw;
+  }
+
+  .product-details{
+    display: none;
+  }
+
+  .slider-wrapper{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .slider-message{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+
+  .watch{
+    height: 22.5vh;
+    width: 20vw;
+  }
+
+  .content{
+    height: 72vh;
+  }
+
+  .bannervintage{
+    width: 160px;
+  }
+  .bannermodern{
+    width: 160px;
+  }
+
+  .slider-name{
+    height: 22vh;
+  }
+
+  .slider-message{
+    height: 22vh;
+  }
+
+  .product-details{
+    display: none;
+  }
+
+  .slider-wrapper{
+    grid-template-columns: repeat(3,1fr);
+    height: 22vh;
+  }
+
+  .content{
+    grid-template-rows: 30% 45% 25%;
+  }
+}
+
+@media (max-width: 480px){
+  .slider-message{
+    font-size: 20px;
+  }
+
+  .watch{
+    height: 18vh;
+    aspect-ratio: 1;
+  }
+}

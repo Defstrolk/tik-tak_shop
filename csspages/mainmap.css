@@ -1,0 +1,50 @@
+
+.content {
+  width: 100%;
+  height: 80dvh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+
+map {
+  height: 80dvh;
+  width: 100%;
+}
+
+iframe {
+  height: 80dvh;
+  width: 50vw;
+}
+
+.information {
+  background-image: url(../img/depositphotos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.adress {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: black;
+  margin-top: 20px;
+  font-family: "Open Sans Condensed";
+  font-size: 28px;
+}
+.tel {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-top: 20px;
+  font-family: "Open Sans Condensed";
+  font-size: 28px;
+}
+

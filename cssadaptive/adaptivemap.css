@@ -1,0 +1,82 @@
+@media (max-width: 1280px) {
+  .adress {
+    width: 344px;
+    text-align: justify;
+    flex-wrap: nowrap;
+    font-size: 25px;
+  }
+
+  .information {
+    background-position: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .information {
+    background-position: 80%;
+  }
+
+  .adress {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .content {
+    height: 72vh;
+  }
+
+  map {
+    height: 72vh;
+    width: 100%;
+  }
+
+  iframe {
+    height: 72vh;
+    width: 50vw;
+  }
+
+  .information {
+    height: 72vh;
+  }
+
+  .adress {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .adress {
+    width: 224px;
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .tel {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .adress {
+    width: 224px;
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .tel {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+  .adress {
+    width: 180px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .tel {
+    font-size: 17px;
+  }
+}

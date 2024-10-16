@@ -1,0 +1,329 @@
+@media (max-width: 1280px) and (orientation: landscape) {
+  .slider-wrapper {
+    width: 800px;
+  }
+
+  .next {
+    transform: translateX(440px);
+  }
+  .prev {
+    transform: translateX(-440px);
+  }
+
+  .slider-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .slider-message {
+    height: 140px;
+  }
+}
+
+@media (max-width: 1280px) and (orientation: portrait){
+  .slider-wrapper {
+    width: 800px;
+  }
+
+  .next {
+    transform: translateX(440px);
+  }
+  .prev {
+    transform: translateX(-440px);
+  }
+
+  .slider-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .slider-message {
+    height: 140px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .slider-wrapper {
+    width: 600px;
+  }
+
+  .next {
+    transform: translateX(340px);
+  }
+  .prev {
+    transform: translateX(-340px);
+  }
+
+  .slider-message {
+    height: 120px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .slider-wrapper {
+    width: 600px;
+  }
+
+  .content {
+    height: 72vh;
+  }
+
+  .next {
+    transform: translateX(340px);
+  }
+  .prev {
+    transform: translateX(-340px);
+  }
+
+  .slider-message {
+    height: 120px;
+  }
+
+  .slider-image {
+    width: 120px;
+    height: 150px;
+  }
+
+  #myBtn{
+    padding: 16px 20px;
+  }
+
+  .modal{
+    overflow-y: hidden;
+  }
+
+  .modal-content{
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .slider-wrapper {
+    width: 360px;
+  }
+
+  .next {
+    transform: translateX(210px);
+  }
+  .prev {
+    transform: translateX(-210px);
+  }
+
+  .slider-message {
+    height: 110px;
+  }
+
+  .slider-message {
+    font-size: clamp(1.5rem, 0.5263rem + 2.1053vw, 2.5rem);
+    scrollbar-width: none;
+    height: 100px;
+  }
+
+  .modal-content {
+    width: 440px;
+  }
+
+  .input {
+    width: 385px;
+  }
+
+  .button1 {
+    margin: 20px 0;
+    width: 40%;
+  }
+
+  .modal {
+    padding-top: 0;
+  }
+
+  .modal-content {
+    margin: 83px auto;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .content {
+    height: 72vh;
+    grid-template-rows: 10% 70% 20%;
+  }
+  .slider-image {
+    width: 85px;
+    height: 85px;
+  }
+
+  .slider-wrapper {
+    width: 360px;
+    margin-top: 15px;
+    height: 90%;
+  }
+
+  .next {
+    transform: translateX(210px);
+  }
+  .prev {
+    transform: translateX(-210px);
+  }
+
+  .slider-message {
+    height: 110px;
+  }
+
+  .slider-message {
+    font-size: clamp(1.5rem, 0.5263rem + 2.1053vw, 2.5rem);
+    scrollbar-width: none;
+    height: 100px;
+  }
+
+  .slider-item.active {
+    justify-content: center;
+    row-gap: 0;
+  }
+
+  #myBtn {
+    padding: 15px 0;
+  }
+
+  .input {
+    width: 385px;
+    height: 44px;
+  }
+
+  .button1 {
+    margin: 10px 0;
+    width: 40%;
+  }
+
+  .modal {
+    padding-top: 0;
+  }
+
+  .text {
+    height: 100px;
+  }
+
+  .modal-content {
+    margin: 25px auto;
+    height: 430px;
+  }
+
+  .slider-name{
+    font-size: clamp(0.125rem, 0.534rem + 2.807vw, 3.125rem);
+  }
+
+  .slider-image{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+  .slider-image {
+    width: 85px;
+    height: 85px;
+  }
+
+  .slider-wrapper {
+    width: 250px;
+  }
+
+  .next {
+    transform: translateX(150px);
+  }
+  .prev {
+    transform: translateX(-150px);
+  }
+
+  .slider-message {
+    height: 110px;
+  }
+
+  .slider-message {
+    font-size: clamp(1.5rem, 0.5263rem + 2.1053vw, 2.5rem);
+    scrollbar-width: none;
+    height: 95px;
+  }
+
+  .slider-item.active {
+    justify-content: space-evenly;
+    row-gap: 0;
+  }
+
+  #myBtn {
+    padding: 15px 0;
+  }
+
+  .modal-content {
+    width: 300px;
+  }
+
+  .input {
+    width: 260px;
+    height: 44px;
+  }
+
+  .button1 {
+    margin: 10px 0;
+    width: 140px;
+    user-select: none;
+  }
+
+  .modal {
+    padding-top: 80px;
+  }
+
+  .text {
+    height: 100px;
+  }
+
+  .modal-content {
+    margin: 25px auto;
+    height: 430px;
+  }
+
+}
+
+@media(height < 431px){
+  .slider-image{
+    display: none;
+  }
+
+  .slider-wrapper{
+    margin-top: 12px;
+    height: 90%;
+  }
+
+  .content{
+    grid-template-rows: 10% 72% 18%;
+  }
+
+  #myBtn {
+    padding: 0;
+    height: 40px;
+  }
+
+  .modal {
+    padding-top: 10px;
+  }
+
+  .modal-content {
+    margin: 0 auto;
+    height: 360px;
+  }
+
+  .input {
+    height: 35px;
+  }
+
+  .text {
+    height: 100px;
+  }
+
+  .slider-message{
+    height: 75px;
+  }
+
+  .button1 {
+    margin: 0;
+    width: 20%;
+    user-select: none;
+    height: 48px;
+  }
+}

@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("../fonts/OpenSansSemiCondensed-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("../fonts/OpenSansCondensed-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(ul[class]) {
+  list-style: none;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+} */
+
+.enter {
+  color: rgb(161, 119, 58);
+  font-family: "Open Sans Condensed";
+  background-color: #000;
+  border: 0px;
+}
+
+.enter:hover {
+  color: rgb(232, 169, 14);
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: auto;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  height: 10dvh;
+  width: auto;
+  background-color: black;
+  position: relative;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding-inline: 50px;
+}
+
+h1,
+h3:hover {
+  color: #ffd700;
+}
+
+.logo-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 390px;
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+.logo1 {
+  aspect-ratio: 1.5;
+  height: inherit;
+  border-radius: 50%;
+  color: transparent;
+}
+
+.company {
+  color: 	rgb(161,119,58);
+  font-family: "Playfair Display SC";
+  font-size: clamp(26px, 1.9vw, 48px);
+}
+
+.header-catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.catalog {
+  font-family: "Open Sans Condensed";
+  font-size: clamp(20px, 1.5vw, 44px);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog1 {
+  list-style-type: none;
+  position: relative;
+}
+
+.catalog-list{
+  display: flex;
+  transition: color 0.3s;
+}
+
+#Livello_1 {
+  margin-left: 5px;
+  fill: rgb(163, 121, 58);
+  width: 30px;
+  aspect-ratio: 1;
+  transition: fill 0.3s, transform 0.3s;
+}
+
+.catalog-list h3 {
+  transition: color 0.3s;
+}
+
+.catalog-list:hover h3 {
+  color: #ffd700;
+}
+
+.catalog-list:hover > #Livello_1 {
+  fill: #ffd700;
+  transform: rotate(90deg);
+}
+
+.catalog-list:hover > #Livello_1 > h3{
+  fill: #ffd700;
+}
+
+/* #Livello_1:hover {
+  transform: rotate(90deg);
+  transition: 5ms;
+  fill: #ffd700;
+} */
+
+h3 {
+  font-family: "Open Sans Condensed";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  color: 	rgb(163, 121, 58);
+  user-select: none;
+}
+
+.catalog2 {
+  display: none;
+  position: absolute;
+  width: 150px;
+  list-style-type: none;
+  background-color: black;
+  font-size: 14px;
+  text-align: justify;
+  margin-right: 50px;
+}
+
+/* .strelka::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  color: rgb(232, 169, 14);
+  left: 100%;
+  padding-left: 45px;
+  width: 20px;
+  aspect-ratio: 1;
+  transform: rotate(270deg);
+  background-image: url(../img/strelka_vniz_v_krugovom_konture_knopki_akhw44hajsy5_32.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ */
+
+.catalog__name {
+  display: flex;
+  gap: 5px;
+  font-size: 2.8vw;
+}
+
+.catalog__name--notactive:hover {
+  color: rgb(161, 119, 58);
+}
+
+.catalog2 > li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: rgb(232, 169, 14);
+}
+
+.header .catalog .catalog1 li:hover > .catalog2 {
+  display: initial;
+  position: absolute;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(161, 119, 58);
+}
+
+.catalog-list {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  position: absolute;
+  float: right;
+  width: 24px;
+  height: 24px;
+  padding-left: 4px;
+}
+
+
+.list:hover {
+  transform: rotate(-90deg);
+  transition: 5ms;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.moto1 {
+  color: #000;
+}
+
+.user {
+  color: white;
+  font-size: 22px;
+  font-family: "Open Sans Condensed";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.header-container {
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.user-link{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-width: 30px;
+  height: 30px;
+}
+
+.user1 {
+  min-width: 30px;
+  height: 30px;
+}
+
+.myBtn {
+  background-color: rgb(161, 119, 58);
+  color: white;
+  padding: 4px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+.company-footer{
+  display: none;
+}
+
+.burger-button{
+  display: flex;
+  width: 32px; 
+  height: 32px; 
+}
+
+
